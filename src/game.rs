@@ -166,7 +166,7 @@ fn autopilot(hist: &Vec<(i32, i32)>, brd: bool, cur: i32) -> i32 {
     3   1
       2*/
     if COLS % 2 == 1 {
-        nc::resize_term(LINS, COLS + 1);
+        nc::resize_term(LINS, COLS - 1);
     }
 
     if cur == -1 {
